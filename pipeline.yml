@@ -1,0 +1,31 @@
+version: 2.0
+type: app
+metadata:
+  productId: hermes
+  componentId: contact-api
+  version: 1.2.32
+  valueStream: sin-value-stream
+tools:
+  node:
+    version: 18
+agent:
+  size: xl
+stages:
+  - type: compile
+    commands:
+      - node -v
+      - npm cache clean --force
+  - type: unit_test
+    enabled: false
+    commands:
+      - rm -rf ./node_modules
+      - npm run test
+  - type: kiuwan
+    enabled: true
+    name: hermes-contact-api
+  - type: release
+    commands:
+      - docker system prune -f
+      - docker build --no-cache -f ./Dockerfile -t ${PRODUCT_ID}/${PRODUCT_ID}-${COMPONENT_ID}:${ARTIFACT_VERSION} .
+    artifacts:
+      - type: docker

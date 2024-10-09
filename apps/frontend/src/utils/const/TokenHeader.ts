@@ -1,0 +1,1 @@
+export const headersCustom: any = { "x-api-key": true };

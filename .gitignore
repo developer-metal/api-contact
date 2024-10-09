@@ -1,0 +1,46 @@
+# compiled output
+/node_modules
+/apps/contact-api/dist
+/apps/frontend/dist
+/apps/contact-api/node_modules
+/apps/frontend/node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+/apps/contact-api/*.sh
+/apps/contact-api/*.csv
+
+# OS
+.DS_Store
+
+# Tests
+/apps/contact-api/coverage
+/apps/contact-api/package-lock.json
+/apps/frontend/package-lock.json
+package-lock.json
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.env.development
+.env.production
+/apps/frontend/.env.production

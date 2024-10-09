@@ -1,0 +1,11 @@
+endpoints:
+
+1. /submit -> recibe un FormRequest
+
+2. /retrieve/:projectSlug -> responde con un CSV con las respuestas asociadas al proyecto. (ej. /retrieve/pori?startDate='24-10-2023'), este debe soportar filtros de rango de fecha opcionales.
+
+3. /project/[:slug]
+    3.a POST -> Genera un proyecto nuevo con el request enviado (FormProject).
+    3.b GET -> Obtiene todos los proyectos, si recibe uin slug, devuelve el proyecto asociado a ese slug.
+    3.c DELETE -> Elimina el projecto con el slug enviado.
+    3.d UPDATE -> Actualizar proyecto con slug enviado.

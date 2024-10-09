@@ -1,0 +1,15 @@
+{
+    "slug": "PORI",
+     "name": "Pori",
+     "mailsTo": [
+        {
+            "name": "luis@transbank.cl"
+        },
+        {
+            "name": "lukas@transbank.cl"
+        }
+    ],
+    "sender": "local@transbank.cl",
+    "pocImage": "fgsdfgdfgdfgsdfgdfgdsgdfgdfgdfgdfgdfgfsdgfdgdfsgfgs",
+    "messageTemplate": "<html><body><h1>Agradecimiento por responder encuesta</h1></body></html>"
+}

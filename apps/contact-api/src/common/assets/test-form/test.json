@@ -1,0 +1,21 @@
+{
+    "contactName": "Luis",
+    "contactLastName": "Ponce",
+    "contactEmail": "lponce@transbank.cl",
+    "projectSlug": "pori",
+    "fields": [
+        {
+            "statement": "Tienes un partner pensado para esta iniciativa?",
+            "response": "no"
+        },
+        {
+            "statement": "Nombre de la iniciativa",
+            "response": "Super TBK Amigo 2.0"
+        }
+    ],
+    "blobs": [{
+        "data": "hsjdkahdjksahdjkashdjkaslhdjsaklhxjkaslhnxjklsahxjkasx",
+        "type": "image/jpg"
+    }],
+    "sendDate": 500000000000
+}
